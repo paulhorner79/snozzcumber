@@ -84,11 +84,14 @@ Snozzcumber = function () {
         "You is a squinky little squiddler!",
         "You is a pibbling little pitsqueak.",
         "You is saying it is grizzling and horrigust for giants to be eating human beans right or left?",
-        "The snozberries taste like snozberries!"
+        "The snozberries taste like snozberries!",
+        "Never grow up...always down.",
+        "You'll never get anywhere if you go about what-iffing like that.",
+        "It's impossible to make your eyes twinkle if you aren't feeling twinkly yourself"
     ];
 
     this.min_phrases = 1;
-    this.max_phrases = 10;
+    this.max_phrases = 18;
     this.p_count     = 4;
     this.output      = "";
 
