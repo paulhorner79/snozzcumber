@@ -5,7 +5,6 @@ var gulp     = require('gulp'),
     jasmine  = require('gulp-jasmine'),
     less     = require('gulp-less'),
     cleancss = require('gulp-clean-css'),
-    ghpages  = require('gulp-gh-pages'),
     clean    = require('gulp-clean');
 
 // Copies the JS file to the dist area.  Creates a minified version of it.
@@ -46,10 +45,7 @@ gulp.task('deploy', function () {
     gulp.start('js', 'test', 'css');
     // copy to dest folder
     gulp.src('./lib/example/**/*.{png,gif,css,js,html}')
-        .pipe(gulp.dest('./gh-pages/'));
-    // deploy ./gh-pages to github
-    //return gulp.src("./gh-pages/**/*")
-    //    .pipe(ghpages());
+        .pipe(gulp.dest('./'));
 })
 
 // Watch
