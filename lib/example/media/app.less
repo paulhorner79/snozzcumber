@@ -6,29 +6,33 @@
 @font-title         : 'Amatic SC', cursive;
 @font-body          : 'Oswald', sans-serif;
 
+html, body {
+    height: 100%;
+}
+
 body {
     margin              : 0;
     padding             : 0;
-    padding-bottom      : 300px;
+    //padding-bottom      : 300px;
     width               : 100%;
     background-color    : @colour-white;
     color               : @colour-black;
     font-family         : @font-body;
     font-weight         : 300;
     background-image    : url(mrfox.png);
-    background-position : bottom right;
+    background-position : top 144px right;
     background-repeat   : no-repeat;
 }
 
 .container {
-    text-align  : center;
-    display     : block;
+    padding-left : 24px;
+    padding-right: 248px;
+    display      : block;
 
     .content {
-        text-align  : center;
         .title {
             margin-top      : 72px;
-            font-size       : 72px;
+            font-size       : 128px;
             margin-bottom   : 18px;
             color           : @colour-grey;
             font-family     : @font-title;
@@ -38,10 +42,10 @@ body {
                 display     : inline;
                 font-size   : 14px;
             }
-            max-width   : 600px;
-            margin      : auto;
             label {
-                margin-right: 12px;
+                color       : @colour-black;
+                font-family : @font-title;
+                font-size   : 28px;
             }
             input, button {
                 font-family         : "Helvetica Neue", Arial, sans-serif;
@@ -55,7 +59,7 @@ body {
             }
             input {
                 margin              : 0;
-                max-width           : 28px;
+                max-width           : 36px;
             }
             button {
                 background-color    : @colour-off-white;
@@ -70,8 +74,6 @@ body {
             display         : block;
             text-align      : left;
             background-color: transparent;
-            max-width       : 600px;
-            margin          : auto;
             margin-top      : 48px;
             &.loading {
                 background-image    : url(loading.gif);
