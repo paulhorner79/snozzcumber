@@ -1,0 +1,109 @@
+// variables
+@colour-white       : #ffffff;
+@colour-off-white   : #efefef;
+@colour-grey        : #d9d6d9;
+@colour-black       : #202020;
+@font-title         : 'Amatic SC', cursive;
+@font-body          : 'Oswald', sans-serif;
+@screen-min         : 800px;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin              : 0;
+    padding             : 0;
+    width               : 100%;
+    background-color    : @colour-white;
+    color               : @colour-black;
+    font-family         : @font-body;
+    font-weight         : 300;
+    background-image    : url(mrfox.png);
+    background-position : bottom right;
+    background-repeat   : no-repeat;
+}
+
+.container {
+    text-align  : center;
+    display     : block;
+
+    .content {
+        text-align  : center;
+        display     : inline-block;
+
+        .title {
+            margin-top      : 12px;
+            font-size       : 48px;
+            margin-bottom   : 18px;
+            color           : @colour-grey;
+            font-family     : @font-title;
+            @media (min-width: @screen-min) {
+                margin-top  : 72px;
+                font-size   : 72px;
+            }
+        }
+        .form {
+            display :block;
+            @media (min-width: @screen-min) {
+                max-width   : 400px;
+                margin      : auto;
+            }
+            @media (max-width: @screen-min) {
+                margin  : 5%;
+                width   : 90%;
+            }
+            label {
+                margin-right: 12px;
+            }
+            input, button {
+                font-family         : "Helvetica Neue", Arial, sans-serif;
+                background-color    : @colour-white;
+                border              : @colour-grey 1px solid;
+                color               : @colour-black;
+                margin              : 0;
+                padding             : 6px 12px;
+                line-height         : 24px;
+                font-size           : 14px;
+            }
+            input {
+                margin              : 0;
+                max-width           : 28px;
+            }
+            button {
+                background-color    : @colour-off-white;
+                cursor              : pointer;
+            }
+        }
+        .output {
+            font-size   : 14px;
+            display     : block;
+            text-align  : left;
+            background-color: @colour-white;
+            &.loading {
+                background-color: @colour-off-white;
+                background-image: url(loading.gif);
+                background-position : top center;
+                background-repeat   : no-repeat;
+            }
+            @media (min-width: @screen-min) {
+                max-width   : 600px;
+                margin      : auto;
+                margin-top  : 48px;
+            }
+            @media (max-width: @screen-min) {
+                width       : 90%;
+                margin      : 5%;
+                margin-top  : 24px;
+            }
+        }
+    }
+}
+a.github {
+    img {
+        position    : absolute;
+        top         : 0;
+        right       : 0;
+        border      : 0;
+    }
+}
