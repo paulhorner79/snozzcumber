@@ -11,7 +11,7 @@ describe("Snozzcumber", function() {
     describe("When the library is initiated", function() {
         it("has default values", function() {
             expect(snozzcumber.min_phrases).toEqual(1);
-            expect(snozzcumber.max_phrases).toEqual(10);
+            expect(snozzcumber.max_phrases).toEqual(18);
             expect(snozzcumber.p_count).toEqual(4);
         });
         it("contains some output", function() {
