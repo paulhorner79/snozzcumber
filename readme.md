@@ -3,7 +3,7 @@
 This is yet another dummy text generator.  But this one uses phrases from Roald
 Dahl stories.
 
-![Fantastic Mr. Fox](https://github.com/paulhorner79/snozzcumber/raw/gh-pages/media/mrfox.png "Fantastic Mr. Fox")
+![Fantastic Mr. Fox](https://raw.githubusercontent.com/paulhorner79/snozzcumber/master/lib/example/media/mrfox.png "Fantastic Mr. Fox")
 
 If like me you use a lot of dummy text when building your projects, but hate
 seeing "Lorem Ipsum" all over your pages, this might be for you.  It generates
@@ -21,7 +21,7 @@ The phrases were taken from the following webpages:
 
 Any inaccuracies are theirs and not mine!
 
-To see this in action, please visit https://github.io/paulhorner79/snozzcumber.
+To see this in action, please visit https://paulhorner79.github.io/snozzcumber/.
 
 
 ## Getting Started
