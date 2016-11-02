@@ -1,7 +1,9 @@
-# Snozzcumber Dummy Text Generator
+# Snozzcumber!
 
 This is yet another dummy text generator.  But this one uses phrases from Roald
 Dahl stories.
+
+To see this in action, please visit https://paulhorner79.github.io/snozzcumber/.
 
 ![Fantastic Mr. Fox](https://raw.githubusercontent.com/paulhorner79/snozzcumber/master/lib/example/media/mrfox.png "Fantastic Mr. Fox")
 
@@ -20,9 +22,6 @@ The phrases were taken from the following webpages:
 - http://www.stylist.co.uk/books/the-greatest-roald-dahl-book-quotes-for-all-moments-in-adult-life
 
 Any inaccuracies are theirs and not mine!
-
-To see this in action, please visit https://paulhorner79.github.io/snozzcumber/.
-
 
 ## Getting Started
 
