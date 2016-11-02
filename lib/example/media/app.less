@@ -5,15 +5,11 @@
 @colour-black       : #202020;
 @font-title         : 'Amatic SC', cursive;
 @font-body          : 'Oswald', sans-serif;
-@screen-min         : 800px;
-
-html, body {
-    height: 100%;
-}
 
 body {
     margin              : 0;
     padding             : 0;
+    padding-bottom      : 300px;
     width               : 100%;
     background-color    : @colour-white;
     color               : @colour-black;
@@ -30,29 +26,20 @@ body {
 
     .content {
         text-align  : center;
-        display     : inline-block;
-
         .title {
-            margin-top      : 12px;
-            font-size       : 48px;
+            margin-top      : 72px;
+            font-size       : 72px;
             margin-bottom   : 18px;
             color           : @colour-grey;
             font-family     : @font-title;
-            @media (min-width: @screen-min) {
-                margin-top  : 72px;
-                font-size   : 72px;
-            }
         }
         .form {
-            display :block;
-            @media (min-width: @screen-min) {
-                max-width   : 400px;
-                margin      : auto;
+            form {
+                display     : inline;
+                font-size   : 14px;
             }
-            @media (max-width: @screen-min) {
-                margin  : 5%;
-                width   : 90%;
-            }
+            max-width   : 600px;
+            margin      : auto;
             label {
                 margin-right: 12px;
             }
@@ -73,28 +60,23 @@ body {
             button {
                 background-color    : @colour-off-white;
                 cursor              : pointer;
+                &:hover, &:focus {
+                    background-color: @colour-white;
+                }
             }
         }
         .output {
-            font-size   : 14px;
-            display     : block;
-            text-align  : left;
+            font-size       : 14px;
+            display         : block;
+            text-align      : left;
             background-color: transparent;
+            max-width       : 600px;
+            margin          : auto;
+            margin-top      : 48px;
             &.loading {
-                background-color: @colour-off-white;
-                background-image: url(loading.gif);
+                background-image    : url(loading.gif);
                 background-position : top center;
                 background-repeat   : no-repeat;
-            }
-            @media (min-width: @screen-min) {
-                max-width   : 600px;
-                margin      : auto;
-                margin-top  : 48px;
-            }
-            @media (max-width: @screen-min) {
-                width       : 90%;
-                margin      : 5%;
-                margin-top  : 24px;
             }
         }
     }
